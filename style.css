@@ -10,7 +10,6 @@ body {
 }
 
 .zone {
-    cursor: pointer;
     color: white;
     /* font-size: 1.75em; */
     transition: all 0.3s linear;
@@ -72,15 +71,21 @@ ul{
     margin-left: 10px;
 }
 
-li > ul {
-    /* font-size: 1.75em; */
+span,a{
+    cursor: pointer;
+    color: darkblue;
+    text-decoration: none;
 }
+
+/*li > ul {
+     font-size: 1.75em; 
+}*/
 
 ul.skills {
     margin-top: 10px;
 }
 
-a {
+.heading > li > a {
     color: #f5f5f5;
     text-decoration: none;
 }
@@ -111,9 +116,9 @@ a {
     grid-column: 1/4;
 }
 
-.experience {
-    /* font-size: .9em; */
-}
+/*.experience {
+     font-size: .9em; 
+}*/
 
 .skill{
     margin-left: 10px;
@@ -136,7 +141,7 @@ a {
 
 .grid-wrapper {
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 10px;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 .grid-wrapperA {
@@ -144,7 +149,15 @@ a {
     grid-gap: 20px;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
-
+.grid-wrapperB {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.open {
+    -ms-grid-column-span: 2;
+    grid-column: span 2;
+}
 .box {
     background-color: #444;
     padding: 130px;
@@ -159,7 +172,36 @@ a {
     text-align: center;
     font-size: 0.7em;
 }
-
+.info{
+    display: none;
+    width: 100%;
+}
+.closeButton{
+    background-color: #fff;
+    border: 1px solid #999;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    position: relative;
+    top: 0px;
+    right: 15px;
+    font-size: 15px;
+    line-height: 10px;
+    padding:2px 6px 4px 5px;
+    width: auto;
+    height: auto ;
+    text-align: center;
+}
+.closeButton:hover{
+    background-color: #ccc;
+}
+.left{
+    text-align: right;
+}
+.sidenote{
+    font-size: 12px;
+}
 /***********************************************************************
  *  Blue Background
  **********************************************************************/
