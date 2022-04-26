@@ -252,3 +252,10 @@ ul.skills {
     background: -ms-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* IE10+ */
     background: linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* W3C */
 }
+
+.code{
+    width:250px; 
+    height: 250px; 
+    overflow-y: scroll; 
+    overflow-x: scroll;
+}
