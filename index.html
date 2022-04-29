@@ -72,97 +72,24 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
 }
-
-.note {
-    font-weight: bold;
-    font-style: italic;
-}
-
-.zone {
-    color: white;
-    /* font-size: 1.75em; */
-    transition: all 0.3s linear;
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-.main-nav {
-    padding : 10px;
-    list-style: none;
-    /* font-size: 1.5em; */
-    margin: 0;
-}
-
-.heading {
-    list-style: none;
-    /* font-size: 0.75em; */
-    margin: 0;
-}
-
-h1 {
-    margin:5px 0px;
-}
-
 h2 {
-        /* font-size: 1em; */
         margin:15px 0px 5px;
 }
-
-h3{
-        /* font-size: 1em; */
-        margin:5px 0px;
-}
-
 .statement {
     font-size: 1.05em;
     margin: 5px;
 } 
-
-.push {
-    margin-left: auto;
-}
-
 li, p {
     /* font-size: .5em; */
     margin: 5px 0px;
 }
-
-ul{
-    margin-bottom: 10px;
-}
-
-    ul.heading {
-        padding: 0px;
-    margin-left: 10px;
-}
-
-span,a{
-    cursor: pointer;
-    color: darkblue;
-    text-decoration: none;
-}
-
-/*li > ul {
-        font-size: 1.75em; 
-}*/
-
 ul.skills {
     margin-top: 10px;
 }
-
 .heading > li > a {
     color: #f5f5f5;
     text-decoration: none;
 }
-
-.section {
-    color:black;  
-}
-
 .university {
     display: grid;
     grid-template-columns: auto;
@@ -170,156 +97,19 @@ ul.skills {
     row-gap: 5px;
     margin: 10px 10px;
 }
-
-.program {
-    font-weight: bold;
-    grid-column: 1/3;
-}
-
-.completion {
-    grid-column: 3/4;
-    text-align: right;
-}
-
-.school {
-    grid-column: 1/4;
-}
-
-/*.experience {
-        font-size: .9em; 
-}*/
-
 .skill{
     margin-left: 10px;
 }
-
 .container {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 70vh;
 }
-
-.experience > h2 {
-    margin-bottom: 10px;
-}
-
-.cover {
-    width: 30rem;
-}
-
 .grid-wrapper {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-}
-.grid-wrapperA {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-}
-.grid-wrapperB {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-}
-.open {
-    -ms-grid-column-span: 2;
-    grid-column: span 2;
-}
-.box {
-    background-color: #444;
-    padding: 130px;
-    margin: 20px;
-}
-
-.box > img {
-    width: 100%;
-}
-
-.footer {
-    text-align: center;
-    font-size: 0.7em;
-}
-.info{
-    display: none;
-    width: 100%;
-}
-.closeButton{
-    background-color: #fff;
-    border: 1px solid #999;
-    cursor: pointer;
-    display: inline-block;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    position: relative;
-    top: 0px;
-    right: 15px;
-    font-size: 15px;
-    line-height: 10px;
-    padding:2px 6px 4px 5px;
-    width: auto;
-    height: auto ;
-    text-align: center;
-}
-.closeButton:hover{
-    background-color: #ccc;
-}
-.left{
-    text-align: right;
-}
-.sidenote{
-    font-size: 12px;
-}
-/***********************************************************************
-    *  Blue Background
-    **********************************************************************/
-    .blue {
-    background: #7abcff; /* Old browsers */
-    background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7abcff), color-stop(44%,#60abf8), color-stop(100%,#4096ee)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
-    background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
-}
-/***********************************************************************
-    *  Green Background
-    **********************************************************************/
-    .green {
-    background: #56B870; /* Old browsers */
-    background: -moz-linear-gradient(top, #56B870 0%, #a5c956 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#56B870), color-stop(100%,#a5c956)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #56B870 0%,#a5c956 100%); /* IE10+ */
-    background: linear-gradient(top, #56B870 0%,#a5c956 100%); /* W3C */
-}
-
-/***********************************************************************
-    *  Red Background
-    **********************************************************************/
-.red {
-    background: #C655BE; /* Old browsers */
-    background: -moz-linear-gradient(top, #C655BE 0%, #cf0404 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#C655BE), color-stop(100%,#cf0404)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* IE10+ */
-    background: linear-gradient(top, #C655BE 0%,#cf0404 100%); /* W3C */
-}
-
-/***********************************************************************
-    *  Yellow Background
-    **********************************************************************/
-.yellow {
-    background: #F3AAAA; /* Old browsers */
-    background: -moz-linear-gradient(top, #F3AAAA 0%, #febf04 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F3AAAA), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* IE10+ */
-    background: linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* W3C */
 }
                                 </code> </pre>
                             </div>
@@ -327,19 +117,47 @@ ul.skills {
                         </div>
                     </li>
                     <li>
-                        <span OnClick="showInfo('listen')">JavaScript</span> 
-                        <div id='listen' class='info'>
+                        <span OnClick="showInfo('listen2')">JavaScript</span> 
+                        <div id='listen2' class='info'>
                             <div class="left"> 
-                                <div  OnClick="hideInfo('listen')" class="closeButton">-</div>
+                                <div  OnClick="hideInfo('listen2')" class="closeButton">-</div>
                             </div><br> 
-                            <iframe src="https://famnew.github.io/resume/spyclue.html" title="html page"></iframe>
-                            <a href="https://famnew.github.io/resume/africa.html" target="blank">africa site</a> 
-                            <img src="Javascript_Sample.jpg" alt="javascript" style="width: 300px;">
+                            <iframe src="https://famnew.github.io/resume/spyclue.html" title="javascript page"></iframe>
+                            <a href="https://famnew.github.io/resume/spyclue.html" target="blank">Spy Clue messages</a> 
+                            <img src="Javascript_Sample.jpg" alt="javascript" style="width: 300px;"> 
                         </div>
                     </li>
-                    <li>React</li>
-                    <li>SQL</li>
-                    <li>animation</li>
+                    <li>
+                        <span OnClick="showInfo('listen2')">React</span> 
+                        <div id='listen2' class='info'>
+                            <div class="left"> 
+                                <div  OnClick="hideInfo('listen2')" class="closeButton">-</div>
+                            </div><br> 
+                            <iframe src="https://famnew.github.io/resume/spyclue.html" title="react page"></iframe>
+                            <a href="https://famnew.github.io/resume/spyclue.html" target="blank">Spy Clue messages</a> 
+                            <img src="Javascript_Sample.jpg" alt="javascript" style="width: 300px;"> 
+                        </div>
+                    </li>
+                    <li>
+                        <span OnClick="showInfo('listen2')">SQL</span> 
+                        <div id='listen2' class='info'>
+                            <div class="left"> 
+                                <div  OnClick="hideInfo('listen2')" class="closeButton">-</div>
+                            </div><br> 
+                            <img src="SQL_Sample.jpg" alt="SQL" style="width: 300px;"> 
+                        </div>
+                    </li>
+                    <li>
+                        <span OnClick="showInfo('listen2')">CSS Animation</span> 
+                        <div id='listen2' class='info'>
+                            <div class="left"> 
+                                <div  OnClick="hideInfo('listen2')" class="closeButton">-</div>
+                            </div><br> 
+                            <iframe src="https://famnew.github.io/resume/animation.html" title="html page"></iframe>
+                            <a href="https://famnew.github.io/resume/animation.html" target="blank">robot animation</a> 
+                            <img src="animation_Sample.jpg" alt="css animation" style="width: 300px;"> 
+                        </div>
+                    </li>
                 <!--things to work on to add:
                     <li>Git Hub</li>
                     <li>Audacity</li> 
