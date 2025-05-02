@@ -3,24 +3,26 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
 }
-
+/*
 .note {
     font-weight: bold;
     font-style: italic;
 }
-
+*/
 .zone {
     color: white;
     /* font-size: 1.75em; */
     transition: all 0.3s linear;
+    margin-left: 10px;
+    margin-right: 10px;
 }
-
+/*
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
 }
-
+*/
 .main-nav {
     padding : 10px;
     list-style: none;
@@ -32,15 +34,31 @@ body {
     list-style: none;
     /* font-size: 0.75em; */
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.inner { 
+    display:inline-block;
+    margin-left:5px;
+    margin-right: 5px;
+    flex-shrink: auto;
+    flex-grow: 1;
+   /* flex: auto auto auto;*/
+    color: #000;
 }
 
 h1 {
-    margin:5px 0px;
+    margin:5px 10px;
+    color: #0072B1;
+    text-transform: uppercase;
 }
 
 h2 {
      /* font-size: 1em; */
-     margin:15px 0px 5px;
+     margin:15px 10px 2px;
+     color: #0072B1;
+     text-transform: uppercase;
 }
 
 h3{
@@ -48,15 +66,22 @@ h3{
      margin:5px 0px;
 }
 
+hr{
+    margin: 0px;
+    height:.5vw;
+    color:#0072B1;
+    background-color: #0072B1;
+}
+
 .statement {
     font-size: 1.05em;
-    margin: 5px;
+   /* margin: 5px;*/
 } 
-
+/*
 .push {
     margin-left: auto;
 }
-
+*/
 li, p {
     /* font-size: .5em; */
     margin: 5px 0px;
@@ -73,7 +98,12 @@ ul{
 
 span,a{
     cursor: pointer;
-    color: darkblue;
+    color: #000;
+    text-decoration: none;
+}
+a{
+    cursor: pointer;
+    color: #000;
     text-decoration: none;
 }
 
@@ -123,7 +153,7 @@ ul.skills {
 .skill{
     margin-left: 10px;
 }
-
+/*
 .container {
     display: flex;
     align-items: center;
@@ -138,7 +168,7 @@ ul.skills {
 .cover {
     width: 30rem;
 }
-
+*/
 .grid-wrapper {
     display: grid;
     grid-gap: 10px;
@@ -171,6 +201,7 @@ ul.skills {
 .footer {
     text-align: center;
     font-size: 0.7em;
+    margin: 0px;
 }
 .info{
     display: none;
@@ -202,6 +233,10 @@ ul.skills {
 .sidenote{
     font-size: 12px;
 }
+
+.tp {
+    padding-top: 10px;
+}
 /***********************************************************************
  *  Blue Background
  **********************************************************************/
@@ -214,6 +249,14 @@ ul.skills {
     background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
     background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
 }
+.code{
+    width:250px; 
+    height: 250px; 
+    overflow-y: scroll; 
+    overflow-x: scroll;
+}
+
+
 /***********************************************************************
  *  Green Background
  **********************************************************************/
@@ -251,11 +294,4 @@ ul.skills {
     background: -o-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Opera 11.10+ */
     background: -ms-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* IE10+ */
     background: linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* W3C */
-}
-
-.code{
-    width:250px; 
-    height: 250px; 
-    overflow-y: scroll; 
-    overflow-x: scroll;
 }
